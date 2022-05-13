@@ -81,10 +81,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oxg-uo-WC6">
+                                <rect key="frame" x="0.0" y="54" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Second Controller" id="vzC-uM-rlQ">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="s8a-Il-DlQ">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="didtapBack:" destination="PID-cR-EaS" id="0vc-L7-lgO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b72-p5-LPH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="b72-p5-LPH" firstAttribute="trailing" secondItem="Oxg-uo-WC6" secondAttribute="trailing" id="H45-ft-eqz"/>
+                            <constraint firstItem="Oxg-uo-WC6" firstAttribute="top" secondItem="b72-p5-LPH" secondAttribute="top" constant="10" id="Hmv-9s-oIv"/>
+                            <constraint firstItem="Oxg-uo-WC6" firstAttribute="leading" secondItem="LuW-an-lxi" secondAttribute="leading" id="MvB-tY-W5D"/>
                             <constraint firstItem="aFA-Hl-Bhj" firstAttribute="centerY" secondItem="LuW-an-lxi" secondAttribute="centerY" id="dJl-NX-s99"/>
                             <constraint firstItem="aFA-Hl-Bhj" firstAttribute="centerX" secondItem="LuW-an-lxi" secondAttribute="centerX" id="uoM-JG-qPs"/>
                         </constraints>

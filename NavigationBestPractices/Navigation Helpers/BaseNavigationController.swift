@@ -30,7 +30,6 @@ class BaseNavigationController: UINavigationController {
     // set default navigation appearance
     func setDefaultAppearance() {
         UINavigationBar.appearance().isOpaque = false
-        UINavigationBar.appearance().barTintColor = .clear
         UINavigationBar.appearance().tintColor = .none
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 22), NSAttributedString.Key.foregroundColor: UIColor.black]
     }
